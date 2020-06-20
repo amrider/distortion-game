@@ -9,7 +9,7 @@ function setup() {
   createP('Richard Breazeale, M.D.')
   createDiv('If you see distortion in the vertical white line below, then click the button (below) until the distortion goes away')
   //createP('The score is measured in pixels.')
-  createCanvas(400, 400);
+  createCanvas(320, 320);
   button = createButton('Click here')//naming the button
   button.mousePressed(drawAgain)
   background(0);
@@ -25,12 +25,12 @@ function draw() {
   for(y=0;y<height;y=y+1+x){
     noStroke()
   fill(255)
-ellipse(200,y,1,1)
+ellipse(160,y,2,2)
 }
 //fixation dots
 
-  ellipse (175, 200, 5, 1)
-  ellipse (225, 200, 5, 1)
+  ellipse (140, 200, 5, 1)
+  ellipse (180, 200, 5, 1)
 
 //note how many cycles in console log to give m-score
   //console.log(x)
